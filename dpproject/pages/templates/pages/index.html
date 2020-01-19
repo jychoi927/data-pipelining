@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>test</title>
+    <title>{% block title %}test{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
 </head>
 
 <body>
     <h1>testing index page</h1>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>
